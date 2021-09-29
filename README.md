@@ -37,7 +37,6 @@ Existing learing-based methods usually train a point cloud upsampling model with
     1. Check the `tf_XXX_compile.sh` script in each sub file under the `tf_ops`directory, and modify the location of the Python interpreter, CUDA runtime API and TensorFlow in the shell script to correspond to the local machine.
     2. Execute each `tf_xxx_compile.sh` successively, or copy`compile.sh` from `docker` directory to `tf_ops` directory for execution; Then execute the `compile_render_balls_so.sh` script
 
-See the [中文说明](Docs/USAGE-CN.md) for detailed operation.
 
 ## Usage
 
