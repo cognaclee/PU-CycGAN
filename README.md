@@ -48,14 +48,16 @@ Existing learing-based methods usually train a point cloud upsampling model with
     ```
 
 2. Training
-Download PU-GAN or our training dataset we collected from [KITTI](http://www.cvlibs.net/datasets/kitti/) and [Semantic3d](http://www.semantic3d.net) (we also organize the data into HDF5 files, and the keys of the dataset is `Kitti` and `semantic3d`) from [Google Drive](https://drive.google.com/drive/folders/1SJhQmvLe53aKAJR_EOcKgr323DeZYiNR?usp=sharing) and then put it in the `data` folder.
+
+    Download PU-GAN or our training dataset we collected from [KITTI](http://www.cvlibs.net/datasets/kitti/) and [Semantic3d](http://www.semantic3d.net) (we also organize the data into HDF5 files, and the keys of the dataset is `Kitti` and `semantic3d`) from [Google Drive](https://drive.google.com/drive/folders/1SJhQmvLe53aKAJR_EOcKgr323DeZYiNR?usp=sharing) and then put it in the `data` folder.
 
     ```bash
     python pu_gan.py --phase=train
     ```
 
 3. Testing
-Download PU-GAN or our testing dataset from [Google Drive](https://drive.google.com/drive/folders/1SJhQmvLe53aKAJR_EOcKgr323DeZYiNR?usp=sharing) and put it into the `data` folder.
+
+    Download PU-GAN or our testing dataset from [Google Drive](https://drive.google.com/drive/folders/1SJhQmvLe53aKAJR_EOcKgr323DeZYiNR?usp=sharing) and put it into the `data` folder.
 
     ```bash
     python pu_gan.py --phase=test --data_dir=path/to/testing/dataset --out_folder=path/to/output/folder
