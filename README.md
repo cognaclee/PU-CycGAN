@@ -6,7 +6,9 @@
 
 ## Introduction
 
-Existing learing-based methods usually train a point cloud upsampling model with synthesized, paired sparse-dense point clouds, and then directly use the trained model to process the real-scanned sparse point clouds. This limits their performance and application in the real world. To solve this problem, we propose PU-CycGAN, a point cloud upsampling method based on optimal transport theory (OT). It can be directly trained with real sparse point cloud so that the gap between the training and test data can be filled. Specifically, PU-CycGAN consists of a Denser, Sparser and two discriminators. The discriminator is used to calculate the quadratic Wasserstein distance, Sparser generates realistic sparse point clouds for Denser, and the Denser upsamples the sparse point cloud in an unsupervised way. Extensive experiments on both synthetic and real-scanned datasets show that our method is effective in distribution uniformity, underlying surface representation and applicability to data in the wild.
+Existing learning-based methods usually train a point cloud upsampling model with synthesized, paired sparse-dense point clouds. However, the distribution gap between synthe-
+sized and real data limits the performance and generalization. To solve this problem, we innovatively regard the upsamplig task as an optimal transport (OT) problem from sparse to dense point cloud. Further we propose PU-CycGAN, a cycle network that consists of a Densifier, Sparsifier and two discriminators. It can be directly trained for upsampling
+with unpaired real sparse point clouds, so that the distribution gap can be filled via the learning. Especially, quadratic Wasserstein distance is introduced for the stable training.
 
 ## Results
 * PU1K dataset
