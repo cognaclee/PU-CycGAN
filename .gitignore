@@ -1,0 +1,9 @@
+**/*.so
+**/*.o
+**/*.cu
+evaluation_code/*
+!evaluation_code/CMakeLists.txt
+!evaluation_code/evaluation.cpp
+.idea
+log
+data
