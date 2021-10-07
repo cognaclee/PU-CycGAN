@@ -62,7 +62,7 @@ with unpaired real sparse point clouds, so that the distribution gap can be fill
     Download PU-GAN or our testing dataset from [Google Drive](https://drive.google.com/drive/folders/1SJhQmvLe53aKAJR_EOcKgr323DeZYiNR?usp=sharing) and put it into the `data` folder.
 
     ```bash
-    python pu_gan.py --phase=test --data_dir=path/to/testing/dataset --out_folder=path/to/output/folder
+    python pu_gan.py --phase=test --data_dir=path/to/testing/dataset --log_dir=path/to/trained/model --out_folder=path/to/output/folder
     ```
 
 4. Evaluation
