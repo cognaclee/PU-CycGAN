@@ -81,3 +81,15 @@ with unpaired real sparse point clouds, so that the distribution gap can be fill
    The results are saved in `evaluation.csv` in the folder where the prediction file is located.
 
 ## Citation
+
+```
+@inproceedings{li2022weakly,
+  title={Weakly Supervised Point Cloud Upsampling VIA Optimal Transport},
+  author={Li, Zezeng and Wang, Weimin and Lei, Na and Wang, Rui},
+  booktitle={ICASSP 2022-2022 IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)},
+  pages={2564--2568},
+  year={2022},
+  organization={IEEE}
+}
+```
+
