@@ -222,7 +222,7 @@ def down_projection_unit(inputs,down_ratio,scope="down_projection_unit",is_train
                                padding='VALID', stride=[1, 1],
                                bn=False, is_training=is_training,
                                scope='conv0', bn_decay=bn_decay)
-        '''
+        #'''
         D0 = down_block(H,down_ratio,is_training=is_training,bn_decay=bn_decay,scope='down_0')
         H1 = up_block(D0,down_ratio,is_training=is_training,bn_decay=bn_decay,scope='up_0')
 
@@ -230,8 +230,8 @@ def down_projection_unit(inputs,down_ratio,scope="down_projection_unit",is_train
         D1 = down_block(E0,down_ratio,is_training=is_training,bn_decay=bn_decay,scope='down_1')
 
         D2 = D0+D1
-        '''
-        D2 = down_block_deep(H,down_ratio,is_training=is_training,bn_decay=bn_decay,scope='deep_down')
+        #'''
+        #D2 = down_block_deep(H,down_ratio,is_training=is_training,bn_decay=bn_decay,scope='deep_down')
     return D2
 
 def weight_learning_unit(inputs,up_ratio,scope="up_projection_unit",is_training=True,bn_decay=None):
